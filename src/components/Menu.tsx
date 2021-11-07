@@ -1,4 +1,3 @@
-import React from 'react';
 import './Board.css';
 import ImageUploader from 'react-images-upload';
 
@@ -8,12 +7,16 @@ interface MenuProps {
 
 function Menu(props: MenuProps) {
     return (
-        <ImageUploader className={"image-uploader"}
+        <ImageUploader
+            fileContainerStyle={{
+                background: 'none',
+                boxShadow: 'none',
+            }}
             withIcon={true}
             buttonText='Upload images'
             onChange={props.onUpload}
             imgExtension={['.jpg', '.gif', '.png', '.gif']}
-            maxFileSize={5242880}
+            maxFileSize={52428800}
         />
     );
 }

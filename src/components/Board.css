@@ -75,16 +75,33 @@ button:hover {
     }
 }
 
+.fileContainer.no-background {
+    background: none;
+}
+
 ul {
+    overflow: auto;
     list-style-type: none;
 }
 
 li {
     list-style-type: none;
+    margin: 0 0 3px 0;
 }
 
-img {
-    margin: 0;
-    height: 50%;
-    width: 50%;
+img.uploaded {
+    width: 80%;
+    border: 2px dashed #0a0909;
+}
+
+img.uploaded:hover {
+    width: 80%;
+    border: 4px dashed #c75050;
+}
+
+.uploaded-image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
