@@ -1,6 +1,8 @@
 # WIP: Do it for him/her/them image generator
 [Simpsons clip source](https://www.youtube.com/watch?v=x2mS3uDqQL4) 
 
+Web application to create 'do it for her' variations out of uploaded images. 
+
 Because I'm a fan of classic Simpsons (and image processing apparently!).
 
 
