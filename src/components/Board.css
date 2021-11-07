@@ -1,0 +1,44 @@
+
+.grid-layout {
+    height: 85vh;
+    margin: 20px;
+    display: grid;
+    gap: 1rem;
+
+    grid-template-areas:
+    'm  i  r '
+    'm  i  r '
+    'm  i  r ';
+
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
+}
+
+.section {
+    resize: both;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 3rem;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+    background-size: cover;
+    background: rgba(200, 130, 171, 0.58) no-repeat center;
+}
+
+.section.menu {
+    grid-area: m;
+}
+
+.section.images {
+    grid-area: i;
+}
+
+.section.result {
+    grid-area: r;
+}
