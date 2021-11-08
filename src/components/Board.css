@@ -12,7 +12,7 @@
     'm  i  r ';
 
     grid-template-rows: auto auto auto;
-    grid-template-columns: 20% 40% 40%;
+    grid-template-columns: auto auto 1000px;
 }
 
 .section {
@@ -26,7 +26,7 @@
     color: #fff;
     height: 100%;
     width: 100%;
-    border-radius: 4px;
+    margin: 0;
     overflow: hidden;
     background-size: cover;
     background: #5675b4 no-repeat center;
@@ -105,10 +105,4 @@ img.uploaded {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-canvas {
-    flex: 1 1 auto;
-    object-fit:none;
-    object-position:top left;
 }

@@ -21,7 +21,7 @@ const Board: React.FC = () => {
                 <Images imageList={images}/>
             </div>
             <div className="section result">
-                <Result/>
+                <Result imageList={images}/>
             </div>
         </section>
     );
