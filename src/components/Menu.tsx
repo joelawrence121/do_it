@@ -15,8 +15,9 @@ function Menu(props: MenuProps) {
             withIcon={true}
             buttonText='Upload images'
             onChange={props.onUpload}
-            imgExtension={['.jpg', '.gif', '.png', '.gif']}
+            imgExtension={['.jpg', '.gif', '.png', '.gif', '.jpeg']}
             maxFileSize={52428800}
+            withPreview={true}
         />
     );
 }

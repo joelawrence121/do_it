@@ -29,7 +29,7 @@
     border-radius: 4px;
     overflow: hidden;
     background-size: cover;
-    background: rgba(200, 130, 171, 0.58) no-repeat center;
+    background: #5675b4 no-repeat center;
 }
 
 .section.menu {
@@ -94,14 +94,21 @@ img.uploaded {
     border: 2px dashed #0a0909;
 }
 
-img.uploaded:hover {
-    width: 80%;
-    border: 4px dashed #c75050;
-}
-
 .uploaded-image-box {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+
+.result-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+canvas {
+    flex: 1 1 auto;
+    object-fit:none;
+    object-position:top left;
 }
