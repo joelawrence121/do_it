@@ -17,9 +17,9 @@ function Result(props: ResultProps) {
 
         let image = new Image()
         image.src = imageUrl
-        let hRatio = (ctx!.canvas.width / xSc) / image.width
-        let vRatio = (ctx!.canvas.height / ySc) / image.height
-        let ratio = Math.min(hRatio, vRatio)
+        let wRatio = (ctx!.canvas.width / xSc) / image.width
+        let hRatio = (ctx!.canvas.height / ySc) / image.height
+        let ratio = Math.min(wRatio, hRatio)
 
         image.onload = function () {
             ctx!.drawImage(
@@ -46,7 +46,17 @@ function Result(props: ResultProps) {
             let vRatio = ctx!.canvas.height / templateHeight
             let ratio = Math.max(hRatio, vRatio)
 
-            renderImage(ctx!, props.imageList[0], 2, 3, 0.07, 0.4)
+            renderImage(ctx!, props.imageList[0], 3, 2, -0.05, 0.7) // (Bottom Left)
+            renderImage(ctx!, props.imageList[1], 4, 4, 0.3, 0.4) // DO IT (Bottom Right)
+            renderImage(ctx!, props.imageList[2], 2, 3, 0.07, 0.4) // DO IT (Bottom LEft)
+            renderImage(ctx!, props.imageList[3], 2, 2, 0.4, 0.58) // HER (Below)
+            renderImage(ctx!, props.imageList[4], 3, 3, 0.82, 0.7) // (Bottom Right)
+            renderImage(ctx!, props.imageList[5], 2.5, 2.5, 0.76, 0.25) // HER (Right)
+            renderImage(ctx!, props.imageList[6], 5, 5, 0.63, 0.22) // FOR
+            renderImage(ctx!, props.imageList[7], 8, 8, 0.3, 0.25) // I
+            renderImage(ctx!, props.imageList[8], 7.5, 7.5, 0.23, 0.3) // T
+            renderImage(ctx!, props.imageList[9], 3, 3, 0.2, -0.07) // IT (Above)
+            renderImage(ctx!, props.imageList[10], 3, 3, 0.5, -0.07) // IT (Above)
 
             template.onload = function () {
                 ctx!.drawImage(
