@@ -1,4 +1,4 @@
-# WIP: Do it for him/her/them image generator
+Do it for him/her/them image generator
 
 Web application to create 'do it for her' variations out of uploaded images. 
 
